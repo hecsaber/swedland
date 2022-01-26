@@ -5,7 +5,7 @@ import Header from './components/Header';
 import Images from './components/Images';
 import InfoCard from './components/InfoCard';
 import Navbar from './components/Navbar';
-
+import Table from './components/Table'
 function App() {
 
   const [menuItems, setMenuItems] = useState([]);
@@ -49,10 +49,7 @@ function App() {
             1. Becsült árak – m<sup>2</sup>-re vetítve:
           </h1>
           <p>
-            Az Ön 500 - 3000 m<sup>2</sup> közötti épületének előzetes tájékoztató, tervek nélkül bekerülési költségei a következők lennének:
-          </p>
-          <p>
-            A. Az épület felépítményének az anyagára
+            Az Ön 500 - 3000 m<sup>2</sup> közötti Swedsteel acélvázas csarnoképületének előzetes tájékoztató, tervek nélkül bekerülési költségei a következők lennének:
           </p>
           <div className='slide-buttons'>
             <div
@@ -73,11 +70,13 @@ function App() {
             <ContentCard type="non-insulated" />
           </div>
           <p>
-            A feltüntetett ár hozzávetőleges árra vonatkozik.
-            Speciális igények (pl. daruk, kapuk, több szint, belső térelválasztás, stb) nagymértékben befolyásolják a tényleges árakat.
+            A feltüntetett árak hozzávetőleges, becsült árak a fenti terv ábra szerinti legjellemzőbb könnyűszerkezetes csarnok épületre kalkulálva.
+            Az épülete olyan egyedi speciális igényei, mint pl. daruk, kapuk száma, több szint, belső térelválasztások, fejépület és stb.
+            Természetesen módosítják és befolyásolják a tényleges árakat.
+            Az elkészült tervek alapján lehet majd egyedileg Önnek a pontos épületére pontos ajánlatot készíteni.
           </p>
           <p>
-            A fenti indikatív árak 2022 januári kalkulációk, amelyek az alapanyagárak ingadozásától függően változhatnak.            
+            Továbbá fontos megjegyezni, hogy a fenti indikatív árak 2022. januári kalkulációval készültek, amelyek az alapanyagárak ingadozásától függően változhatnak.            
           </p>
         </article>
         <article>
@@ -92,6 +91,7 @@ function App() {
             Tervek alapján kapott ajánlatok már egymással jobban összehasonlíthatóak és a tényleges költséget jobban megközelíti,
             ami eltérő lett a műszaki tartalom ezt mindig meg kell nézni, hogy melyik az előnyösebb a cél, az épület és a hosszú távú működés és a gazdaságosság szempontjából.
           </p>
+          <Table />
         </article>
         <article>
           <h1 id="szaktervezo">3. Tervezés</h1>

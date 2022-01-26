@@ -7,6 +7,7 @@ const ContentCard = (props) => {
   return (
     <div className="content-card">
       <div className="block full-block">
+        <p>Felépítmény anyagára</p>
         <p className="hall-type">
           {type === 'insulated' ? "Hőszigetelt szendvicspaneles" : "Nem hőszigetelt trapézlemezes"}
         </p>

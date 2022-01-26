@@ -139,6 +139,13 @@ p, li {
   margin-bottom: 0.5rem;
 }
 
+td, th {
+  font-size: 1rem;
+  line-height: 1.25rem;
+  margin: 0;
+  margin-bottom: 0.5rem;
+}
+
 article p sup {
   font-size: 0.65rem;
 }
@@ -151,6 +158,10 @@ article p sup {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
+}
+
+.inner-double.inner-slide {
+  margin-bottom: 2.5rem;
 }
 
 .content-card, .info-card {
@@ -185,6 +196,10 @@ article p sup {
 
 .block p {
   font-weight: bold;
+}
+
+.block .hall-type {
+  font-weight: normal;
 }
 
 .block p.regular {
@@ -295,6 +310,45 @@ p.strong {
   padding-bottom: 4rem;
 }
 
+.datatable-rows {
+  background: #3daaf241;
+}
+
+.datatable-light {
+  background: #3daaf210;
+}
+
+.datatable-rows td {
+  padding: 1rem;
+  border: 3px solid white;
+}
+
+table {
+  margin-bottom: 2rem;
+}
+
+.table-main {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.table-main th {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.piechart-img {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+.piechart-img img {
+  width: 100%;
+}
+
 @media screen and (max-width: 1200px) {
 
   .navbar {
@@ -398,6 +452,7 @@ p.strong {
   }
 
   p.hall-type {
+    font-weight: normal;
     text-align: center;
   }
 

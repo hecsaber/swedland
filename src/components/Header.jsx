@@ -36,7 +36,8 @@ const Header = (props) => {
     <div className="header-frame">
       <div className="header-content">
         <h1>
-          Csarnoka, beruházása kapcsán 4 fontos
+          Csarnoka, beruházása kapcsán<br />
+          4 fontos
           információ az
           elinduláshoz:
         </h1>
