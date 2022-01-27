@@ -5,7 +5,9 @@ import Header from './components/Header';
 import Images from './components/Images';
 import InfoCard from './components/InfoCard';
 import Navbar from './components/Navbar';
-import Table from './components/Table'
+import Table from './components/Table';
+import blueprint from './components/ipari-csarnok-homlokzat.jpg';
+
 function App() {
 
   const [menuItems, setMenuItems] = useState([]);
@@ -68,6 +70,12 @@ function App() {
           <div className={isInsulated ? 'inner-double inner-slide' : 'inner-double inner-slide slide-active'}>
             <ContentCard type="insulated" />
             <ContentCard type="non-insulated" />
+          </div>
+          <div className="single-img">
+            <img
+              src={blueprint}
+              alt="Standard acélvázas csarnoképület geometria"
+            />
           </div>
           <p>
             A feltüntetett árak hozzávetőleges, becsült árak a fenti terv ábra szerinti legjellemzőbb könnyűszerkezetes csarnok épületre kalkulálva.

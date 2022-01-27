@@ -337,7 +337,7 @@ table {
   font-size: 1.5rem;
 }
 
-.piechart-img {
+.single-img {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -345,7 +345,7 @@ table {
   margin: 2rem 0;
 }
 
-.piechart-img img {
+.single-img img {
   width: 100%;
 }
 

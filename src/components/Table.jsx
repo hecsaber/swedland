@@ -3,7 +3,7 @@ import piechart from "./piechart.jpg"
 const Table = () => {
   return (
     <div>
-      <div className="piechart-img">
+      <div className="single-img">
         <img
           src={piechart}
           alt="Csarnok építés időbeni eloszlása"
