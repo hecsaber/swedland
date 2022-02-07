@@ -42,7 +42,7 @@ const Images = (props) => {
         ])
       } else if (type === 'video') {
         setCollection([
-          {src: agrReferencia, alt: "Swedsteel megvalósult agrár referenciák", text: 'Tekintse meg a megvalósult mezőgazdasági csarnokainkat ebben a rövid videóban!', videoSrc: 'https://youtu.be/DaYMS6X0oRU'},
+          {src: agrReferencia, alt: "Swedsteel megvalósult agrár referenciák", text: 'Tekintse meg a megvalósult mezőgazdasági csarnokainkat ebben a rövid videóban!', videoSrc: 'https://www.youtube.com/embed/DaYMS6X0oRU'},
           {src: mezotur, alt: "Swedsteel acélvázas csarnok építés közben", text: 'Tekintse meg egyik acélvázas hőszigetelt csarnokunk építését a kis filmünkben!', videoSrc: 'https://www.youtube.com/embed/M3sZW7_vbMw'}
         ])
       }
