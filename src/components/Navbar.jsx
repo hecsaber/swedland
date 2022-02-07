@@ -1,5 +1,5 @@
 import logo from "./swedsteel-logo.png";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 const Navbar = (props) => {
 

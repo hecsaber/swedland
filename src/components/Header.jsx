@@ -3,8 +3,10 @@ import milestone from "./mission.png";
 import plan from "./plan.png";
 import gallery from "./images.png";
 import HeaderCards from "./HeaderCards";
+import { useState } from "react";
 
 const Header = (props) => {
+  const [ type ] = useState(props.type);
   const topics = [
     {
       source: pricetag,
@@ -33,7 +35,7 @@ const Header = (props) => {
   ]
 
   return (
-    <div className="header-frame">
+    <div className={type === 'ipar' ? "header-frame" : "header-frame header-agro"}>
       <div className="header-content">
         <h1>
           Csarnoka, beruházása kapcsán<br />

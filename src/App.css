@@ -82,6 +82,12 @@ body {
   min-height: 650px;
 }
 
+.header-frame.header-agro {
+  background: url("./components/landing-agro-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .header-content, .inner-content {
   max-width: 1200px;
   margin: 0 auto;
@@ -129,7 +135,7 @@ sup {
 h1 {
   color: #0067ac;
   font-weight: bold;
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 
 p, li {
@@ -137,6 +143,16 @@ p, li {
   line-height: 1.5rem;
   margin: 0;
   margin-bottom: 0.5rem;
+}
+
+.additional-info {
+  font-size: 1rem;
+  line-height: 1.25rem;
+  font-style: italic;
+}
+
+thead {
+  height: 8rem;
 }
 
 td, th {
@@ -268,6 +284,7 @@ p.strong {
 .image-list {
   max-width: 590px;
   cursor: pointer;
+  margin-top: 2rem;
 }
 
 .image-list img {
@@ -276,14 +293,14 @@ p.strong {
 
 .full-width {
   background: #333;
-  padding: 2rem 0;
+  padding-bottom: 2rem;
   margin: 2rem 0;
 }
 
 .video-text {
   text-align: center;
   color: white;
-  margin-top: 1rem;
+  margin-bottom: 1rem;
   padding: 0 4rem;
 }
 
@@ -330,6 +347,7 @@ table {
 .table-main {
   text-align: center;
   text-transform: uppercase;
+  height: 4rem;
 }
 
 .table-main th {
@@ -342,11 +360,25 @@ table {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 2rem 0;
+  margin: 2rem 0 0;
 }
 
 .single-img img {
   width: 100%;
+}
+
+.single-img.type-img img {
+  width: 50%;
+}
+
+.lightbulb {
+  width: 40px;
+  margin-right: 1rem;
+}
+
+.highlighted-info {
+  display: flex;
+  align-items: center;
 }
 
 @media screen and (max-width: 1200px) {
@@ -495,4 +527,11 @@ table {
     width: 100%;
   }
 
+  .single-img.type-img {
+    margin-bottom: 3rem;
+  }
+
+  .single-img.type-img img {
+    width: 75%;
+  }
 }
