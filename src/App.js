@@ -6,8 +6,6 @@ import Images from './components/Images';
 import InfoCard from './components/InfoCard';
 import Navbar from './components/Navbar';
 import Table from './components/Table';
-import ipari from './components/ipari_tipusepulet.jpg';
-import agrar from './components/agrar_tipusepulet.jpg';
 
 function App(props) {
 
@@ -55,12 +53,6 @@ function App(props) {
           <p>
             Az Ön 500 - 3000 m<sup>2</sup> közötti Swedsteel acélvázas csarnoképületének előzetes tájékoztató, tervek nélkül bekerülési költségei a következők lennének:
           </p>
-          <div className="single-img type-img">
-            <img
-              src={ type === 'ipar' ? ipari : agrar }
-              alt="Standard acélvázas csarnoképület geometria"
-            />
-          </div>
           <div className='slide-buttons'>
             <div
               className={isInsulated ? 'slide-button button-active' : 'slide-button' } 
@@ -79,7 +71,7 @@ function App(props) {
             <ContentCard type="insulated" />
             <ContentCard type="non-insulated" />
           </div>
-          <p className="additional-info">
+          <p>
             A feltüntetett árak hozzávetőleges, becsült árak a fenti képen látható csarnok szerinti legjellemzőbb könnyűszerkezetes formára kalkulálva.<br />
             Az épülete olyan egyedi speciális igényei, mint pl. daruk, kapuk száma, több szint, belső térelválasztások, fejépület és stb. természetesen módosítják és befolyásolják a tényleges árakat.
             Az elkészült tervek alapján lehet majd egyedileg Önnek a pontos épületére pontos ajánlatot készíteni.
@@ -93,25 +85,27 @@ function App(props) {
             2. Megvalósítás fontos mérföldkövei:
           </h1>
           <p>
-            Vázlatosan és nagyságrendi időtartamokkal a csarnok megvalósítás főbb lépései és a folyamat globális áttekintése céljából:
+            Megvalósítás, csarnoképítés főbb lépései vázlatosan és nagyságrendi időtartamokkal a folyamat globális áttekintése céljából:
           </p>
           <ul>
-            <li>az első lépés a pontos épület igények, a telek megléte és finanszírozás biztosítását követően a tervezés</li>
-            <li>a tervekkel az ajánlatok bekérése (opció: pályázathoz terv+ajánlat benyújtás)</li>
+            <li>első lépés a tervezés, tervező felkeresése az épület, a funkció(k), technológia, méretigény pontos megadásával, a telek, építkezés helyszín pontos helyével és a  megvalósítás, üzembevétel idejének kitűzésével, finanszírozás biztosításával</li>
+            <li>a tervekkel az ajánlatok bekérése (pályázat igénybevételéhez a tervek és az ajánlat is szükséges)</li>
           </ul>
-          <p>
-            A tervek alapján kapott ajánlatok már egymással jobban összehasonlíthatóak és a tényleges költséget jobban megközelítik.
-          </p>
           <div className='highlighted-info'>
             <span>
               <SvgComponent className="lightbulb"/>
             </span>
             <p>
-              FONTOS! Eltérő lehet az ajánlatok műszaki tartalma, ezt mindig meg kell nézni tervezővel vagy az ajánlatkészítő műszaki mérnökével egyeztetni. 
+              FONTOS! A tervek alapján kapott ajánlatok már egymással jobban összehasonlíthatóak és a tényleges végső költséget jobban megközelítik. 
             </p>
           </div>
-          <p>  
-            Így lesz  jól látható, Önnek melyik az előnyösebb az épület hosszú távú működése és a gazdaságosság szempontjából.
+          <p>
+            Az ajánlatok műszaki tartalma nem lesz azonos, mivel a gyártók termékeinek műszaki paraméterei nem azonosak, az összehasonlításukhoz akár a tervezővel,
+            akár velünk, az ajánlatkészítő műszaki mérnökeinkkel tud egyeztetni telefonon vagy személyesen a gyárunkban.
+          </p>
+          <p>
+            Több műszaki és gazdaságossági megoldásban lehet gondolkodni, ehhez kell a tervező-gyártó-kivitelező közös egyeztetése Önnel.
+            Így nem lesznek menetközben sem váratlan események.
           </p>
           <Table />
         </article>
@@ -144,7 +138,7 @@ function App(props) {
           vagy írjon közvetlenül az <a href="mailto:aron.csillik@swedsteel.hu">aron.csillik@swedsteel.hu</a> mailcímre.
         </p>
         <p>
-          Ha szeretne egy Swedsteel csarnok megépítéséről további információkat kapni, kérjük <a href="mailto:info@swedsteel.hu">itt</a> jelezze, és elküldjünk Önnek. 
+          Ha szeretne egy Swedsteel csarnok megépítéséről további információkat kapni, kérjük <a href="mailto:info@swedsteel.hu">itt</a> jelezze, és elküldjük Önnek. 
         </p>
         <p>
           Üdvözlettel:<br />

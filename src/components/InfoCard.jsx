@@ -1,7 +1,7 @@
 const InfoCard = (props) => {
   const havePlan = (
     <>
-      <p className="info-head">ha már a tervei elkészültek</p>
+      <p className="info-head">ha tervei már elkészültek</p>
       <p className="info-content">az engedélyezési tervek alapján ajánlatot tudunk Önnek készíteni, jelezze felénk, küldje el terveit!</p>
     </>
   )

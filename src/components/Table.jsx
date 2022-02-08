@@ -3,6 +3,9 @@ import piechart from "./piechart.jpg"
 const Table = () => {
   return (
     <div>
+      <h2 className="chart-title">
+        Átlagos becsült idők telek és szándék megléte esetén egy 1000-2000 m<sup>2</sup>-es csarnok esetén (hónapokban számolva)  
+      </h2>
       <div className="single-img">
         <img
           src={piechart}
