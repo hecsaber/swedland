@@ -378,11 +378,22 @@ table {
 .lightbulb {
   width: 40px;
   margin-right: 1rem;
+  transform: scale(2);
+  transform-origin: left top;
 }
 
 .highlighted-info {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
+}
+
+.highlighted-img {
+  max-width: 300px;
+  margin-right: 1rem;
+}
+
+.highlighted-img img {
+  width: 100%;
 }
 
 .chart-title {
@@ -398,6 +409,10 @@ table {
   .navbar {
     padding: 0 1rem;
     position: relative;
+  }
+
+  .inner-content {
+    padding: 1rem;
   }
 }
 
@@ -545,5 +560,15 @@ table {
 
   .single-img.type-img img {
     width: 75%;
+  }
+
+  #hall-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .highlighted-img {
+    margin: 0;
+    max-width: 75%;
   }
 }

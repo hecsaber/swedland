@@ -6,6 +6,7 @@ import Images from './components/Images';
 import InfoCard from './components/InfoCard';
 import Navbar from './components/Navbar';
 import Table from './components/Table';
+import hall from './components/10_komplett.png';
 
 function App(props) {
 
@@ -71,14 +72,24 @@ function App(props) {
             <ContentCard type="insulated" />
             <ContentCard type="non-insulated" />
           </div>
-          <p>
-            A feltüntetett árak hozzávetőleges, becsült árak a fenti képen látható csarnok szerinti legjellemzőbb könnyűszerkezetes formára kalkulálva.<br />
-            Az épülete olyan egyedi speciális igényei, mint pl. daruk, kapuk száma, több szint, belső térelválasztások, fejépület és stb. természetesen módosítják és befolyásolják a tényleges árakat.
-            Az elkészült tervek alapján lehet majd egyedileg Önnek a pontos épületére pontos ajánlatot készíteni.
-          </p>
-          <p className="additional-info">
-            Továbbá fontos megjegyezni, hogy a fenti indikatív árak 2022. januári kalkulációval készültek, amelyek az alapanyagárak ingadozásától függően változhatnak.            
-          </p>
+          <div className='highlighted-info' id='hall-container'>
+            <div className='highlighted-img'>
+              <img
+                src={hall}
+                alt="tipikus acélcsarnok forma"
+              />
+            </div>
+            <div>
+              <p>
+                A feltüntetett árak hozzávetőleges, becsült árak a fenti képen látható csarnok szerinti legjellemzőbb könnyűszerkezetes formára kalkulálva.<br />
+                Az épülete olyan egyedi speciális igényei, mint pl. daruk, kapuk száma, több szint, belső térelválasztások, fejépület és stb. természetesen módosítják és befolyásolják a tényleges árakat.
+                Az elkészült tervek alapján lehet majd egyedileg Önnek a pontos épületére pontos ajánlatot készíteni.
+              </p>
+              <p className="additional-info">
+                Továbbá fontos megjegyezni, hogy a fenti indikatív árak 2022. januári kalkulációval készültek, amelyek az alapanyagárak ingadozásától függően változhatnak.            
+              </p>
+            </div>
+          </div>
         </article>
         <article>
           <h1 id='merfoldkovek'>
@@ -95,18 +106,20 @@ function App(props) {
             <span>
               <SvgComponent className="lightbulb"/>
             </span>
-            <p>
-              FONTOS! A tervek alapján kapott ajánlatok már egymással jobban összehasonlíthatóak és a tényleges végső költséget jobban megközelítik. 
-            </p>
+            <div>
+              <p>
+                FONTOS! A tervek alapján kapott ajánlatok már egymással jobban összehasonlíthatóak és a tényleges végső költséget jobban megközelítik. 
+              </p>
+              <p>
+                Az ajánlatok műszaki tartalma nem lesz azonos, mivel a gyártók termékeinek műszaki paraméterei nem azonosak, az összehasonlításukhoz akár a tervezővel,
+                akár velünk, az ajánlatkészítő műszaki mérnökeinkkel tud egyeztetni telefonon vagy személyesen a gyárunkban.
+              </p>
+              <p>
+                Több műszaki és gazdaságossági megoldásban lehet gondolkodni, ehhez kell a tervező-gyártó-kivitelező közös egyeztetése Önnel.
+                Így nem lesznek menetközben sem váratlan események.
+              </p>
+            </div>
           </div>
-          <p>
-            Az ajánlatok műszaki tartalma nem lesz azonos, mivel a gyártók termékeinek műszaki paraméterei nem azonosak, az összehasonlításukhoz akár a tervezővel,
-            akár velünk, az ajánlatkészítő műszaki mérnökeinkkel tud egyeztetni telefonon vagy személyesen a gyárunkban.
-          </p>
-          <p>
-            Több műszaki és gazdaságossági megoldásban lehet gondolkodni, ehhez kell a tervező-gyártó-kivitelező közös egyeztetése Önnel.
-            Így nem lesznek menetközben sem váratlan események.
-          </p>
           <Table />
         </article>
         <article>
@@ -150,16 +163,8 @@ function App(props) {
 }
 
 const SvgComponent = (props) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 489.242 489.242"
-    style={{
-      enableBackground: "new 0 0 489.242 489.242",
-    }}
-    xmlSpace="preserve"
-    {...props}
-  >
-    <path d="M416.321 171.943c0-97.8-82.2-176.9-181-171.7-89.5 5.2-160.3 79.1-162.4 168.6 0 44.7 16.6 86.3 45.8 118.6 47.7 51.1 41.6 110.3 41.6 110.3 0 11.4 9.4 20.8 20.8 20.8h126.9c11.4 0 20.8-9.4 21.8-20.8 0 0-7-57.7 40.6-109.2 29.2-31.3 45.9-72.9 45.9-116.6zm-128 206h-87.4c-2.1-42.7-20.8-84.3-51-116.5-22.9-25-34.3-57.2-34.3-90.5 1-68.7 54.1-124.8 122.8-129 74.9-4.2 137.3 56.2 137.3 130 0 32.3-12.5 64.5-35.4 88.4-31.2 33.3-49.9 74.9-52 117.6zM281.021 447.643h-73.9c-11.4 0-20.8 9.4-20.8 20.8s9.4 20.8 20.8 20.8h73.9c11.4 0 20.8-9.4 20.8-20.8s-9.3-20.8-20.8-20.8z" />
+  <svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} {...props}>
+    <path d="M14 19h-4a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1zm0 2h-4a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1zm.25 2h-4.5l1.188.782c.154.138.38.218.615.218h.895c.234 0 .461-.08.615-.218L14.25 23zM18 9.201c0 3.569-3.214 5.983-3.214 8.799h-1.989c-.003-1.858.87-3.389 1.721-4.867C15.279 11.808 16 10.556 16 9.201c0-2.592-2.075-3.772-4.003-3.772C10.072 5.429 8 6.609 8 9.201c0 1.355.721 2.607 1.482 3.932.851 1.478 1.725 3.009 1.72 4.867H9.214C9.214 15.184 6 12.77 6 9.201c0-3.723 2.998-5.772 5.997-5.772C14.998 3.429 18 5.48 18 9.201zm4-.691v1.372h-2.538c.02-.223.038-.448.038-.681 0-.237-.017-.464-.035-.69H22zM11.352 1.957V0h1.371v1.964a7.73 7.73 0 0 0-1.371-.007zM7.609 3.251l-1.04-1.94L7.777.663l1.037 1.933a7.77 7.77 0 0 0-1.205.655zm10.586 1.735 1.942-1.394.799 1.115-2.054 1.473a6.697 6.697 0 0 0-.687-1.194zm-3.01-2.389L16.223.663l1.208.648-1.041 1.941a7.763 7.763 0 0 0-1.205-.655zM5.117 6.18 3.063 4.708l.799-1.115 1.942 1.393a6.688 6.688 0 0 0-.687 1.194zm13.707 6.223 2.354.954-.514 1.271-2.425-.982c.21-.397.408-.812.585-1.243zM5.716 13.558l-2.356 1.06-.562-1.251 2.34-1.052c.173.433.371.845.578 1.243zM4.538 9.882H2V8.51h2.535a8.612 8.612 0 0 0-.035.691c0 .233.018.458.038.681z" />
   </svg>
 )
 

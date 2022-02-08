@@ -8,7 +8,7 @@ import referencia from "./ref-video.jpg"
 import ImageModal from "./ImageModal"
 import kapoly from "./kapoly.jpg"
 import kite from "./kite.jpg"
-import mihald from "./mihald.jpg"
+import kuti from "./kuti.jpg"
 import belvard from "./belvardgyula.jpg"
 import agrReferencia from "./agr-video.jpg"
 
@@ -38,7 +38,7 @@ const Images = (props) => {
           {src: kapoly, alt: "Swedsteel marhaistállók Kapolyon"},
           {src: kite, alt: "Kite Zrt részére mezőgazdasági géptároló a Swedsteel-től"},
           {src: belvard, alt: "Swedsteel csarnoképület Belvárdgyulán"},
-          {src: mihald, alt: "Szemesterménytároló csarnoképület Swedsteel anyagokból"}
+          {src: kuti, alt: "Swedsteel magtároló és nyitott szín"}
         ])
       } else if (type === 'video') {
         setCollection([
