@@ -81,7 +81,7 @@ function App(props) {
             </div>
             <div>
               <p>
-                A feltüntetett árak hozzávetőleges, becsült árak a fenti képen látható csarnok szerinti legjellemzőbb könnyűszerkezetes formára kalkulálva.<br />
+                A feltüntetett árak hozzávetőleges, becsült árak az ábrán látható csarnok szerinti legjellemzőbb könnyűszerkezetes formára kalkulálva.<br />
                 Az épülete olyan egyedi speciális igényei, mint pl. daruk, kapuk száma, több szint, belső térelválasztások, fejépület és stb. természetesen módosítják és befolyásolják a tényleges árakat.
                 Az elkészült tervek alapján lehet majd egyedileg Önnek a pontos épületére pontos ajánlatot készíteni.
               </p>
